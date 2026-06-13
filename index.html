@@ -612,7 +612,7 @@
       <p>Pendampingan coding dari programmer industri 4+ tahun • 100% fokus ke pemahaman & kecepatan belajar</p>
       <p style="margin-top: 20px;"><i class="fas fa-envelope"></i> sahabattutoripb@gmail.com | <i class="fab fa-instagram"></i> @sahabattutor</p>
       <p style="margin-top: 28px;">© 2025 Sahabattutor — Belajar lebih ringan dengan mentor nyata.</p>
-      <p style="margin-top: 28px;">version 1.0.2 </p>
+      <p style="margin-top: 28px;">version 1.0.3 </p>
     </div>
   </footer>
 
@@ -632,13 +632,8 @@
       const email = document.getElementById('email').value.trim();
       const stack = document.getElementById('stack').value;
       
-      if (!nama || !wa) {
+      if (!nama) {
         messageDiv.innerHTML = '<span style="color:#EF4444;">Mohon isi nama dan nomor WhatsApp</span>';
-        return;
-      }
-      // Basic validation wa minimal 10 digit
-      if (wa.length < 9) {
-        messageDiv.innerHTML = '<span style="color:#EF4444;">Nomor WhatsApp tidak valid</span>';
         return;
       }
       
